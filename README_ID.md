@@ -42,7 +42,7 @@ Buat representasi visual dari topologi jaringan Anda dengan diagram interaktif. 
 
 1. Klon repositori
    ```
-   git clone https://github.com/username-anda/subnet-calculator.git
+   git clone https://github.com/4rmnd/subnet-calculator.git
    cd subnet-calculator
    ```
 
