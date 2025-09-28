@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-gray: #D9D9D9;
+  --gradient-primary: linear-gradient(to bottom, #181c24 0%, #000 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--color-gray) 0%, #e6e6e6 100%);
+  --shadow-neon: 0 0 10px rgba(255, 255, 255, 0.1),
+                 0 0 20px rgba(255, 255, 255, 0.05),
+                 0 0 30px rgba(255, 255, 255, 0.025);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+    background: var(--gradient-primary) !important;
+  }
+}
+
+/* Modern Navigation Styles */
+.nav-link {
+  @apply relative overflow-hidden;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.nav-link:hover::before {
+  left: 100%;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-neon);
+}
+
+.nav-link.active {
+  background: var(--color-white);
+  color: var(--color-black);
+  box-shadow: var(--shadow-neon);
+}
+
+/* Modern Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Zoom handling */
+@media screen and (min-resolution: 1.1dppx) and (max-resolution: 1.6dppx) {
+  .nav-link {
+    font-size: 0.8125rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Hapus SEMUA style navigasi lama */
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #main-nav {
+    background-color: #111827;
+    border-bottom-color: #374151;
+  }
+  
+  /* Hapus style lama .nav-link di dark mode */
+}
+
+/* Zoom handling spesifik */
+@media screen and (min-resolution: 1.1dppx) and (max-resolution: 1.6dppx) {
+  .nav-link {
+    font-size: 0.8125rem;
+    padding: 6px 8px;
+  }
+} 
