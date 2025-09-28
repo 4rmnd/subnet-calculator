@@ -1,6 +1,6 @@
 # Subnet Calculator
 
-![Subnet Calculator]
+[Subnet Calculator]
 
 A modern, user-friendly subnet calculator web application built with React and Vite. This tool helps network administrators, IT students, and professionals perform various IP addressing calculations quickly and efficiently.
 
