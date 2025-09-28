@@ -84,7 +84,6 @@ File yang dibangun akan berada di direktori `dist`, siap untuk di-deploy ke laya
 ## Struktur Proyek
 
 ```
-├── public/               # Aset statis
 ├── src/
 │   ├── components/       # Komponen React
 │   │   ├── IpClassDetector.jsx
