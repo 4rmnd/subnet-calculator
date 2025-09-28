@@ -84,7 +84,6 @@ The built files will be in the `dist` directory, ready to be deployed to any sta
 ## Project Structure
 
 ```
-├── public/               # Static assets
 ├── src/
 │   ├── components/       # React components
 │   │   ├── IpClassDetector.jsx
