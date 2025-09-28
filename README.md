@@ -42,7 +42,7 @@ Create visual representations of your network topology with an interactive diagr
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/subnet-calculator.git
+   git clone https://github.com/4rmnd/subnet-calculator.git
    cd subnet-calculator
    ```
 
@@ -114,3 +114,7 @@ The built files will be in the `dist` directory, ready to be deployed to any sta
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests to help improve this tool.
+
+## 🙏 Thank You
+
+Thank you for using or contributing to this project. Hope it's useful!
